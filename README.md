@@ -14,20 +14,17 @@
 * nodejs 
 * nodejs EJS	
 
-## Para rodar o projeto na sua maquina, você precisa:
+## Para rodar o projeto na sua maquina, é necessário ter instalado node.js, npm
 
-* Acesse o `cmd` (pront de comando)
-* Instalar o Node na maquina: Link https://nodejs.org/
-* Instalar o Gulp globalmente no sistema com `npm install -g gulp`
+* Acesse o `cmd` (pront de comando);
+* Instalar o Node na maquina: Link https://nodejs.org/;
+* Instalar o Gulp globalmente no sistema com `npm install -g gulp`.
 
-## Agora:
+## Instalação do projeto
 
-* Clonar o código-fonte na sua máquina:
-
-	https://github.com/silvanoamaral/catalogCart
-
-* Acesse a pasta do projeto `catalogCart`
-* Digite o comento `npm install` 
+* Clone o repositório na sua máquina: https://github.com/silvanoamaral/catalogCart;
+* Acesse a pasta do projeto `catalogCart`;
+* Digite o comando `npm install` para instalar os pacotes.
 
 ## Agora vamos rodar o projeto
 
