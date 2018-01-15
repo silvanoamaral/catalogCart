@@ -1,0 +1,37 @@
+<%- contentFor('body') %>
+<ul class="row text-center">
+    <% listaProduct.products.forEach(function(item){ %>
+        <li class="col-lg-3 col-md-6 mb-4">                
+            <div class="block2-txt p-t-20">
+                <img src="images/item-<%= item.id %>.jpg" alt="">
+                <div class="block2-name dis-block s-text3 p-b-5" data-description="<%= item.description %>">
+                    <%= item.title %>
+                </div>
+                <div class="price-info">
+                    <span class="price">
+                        <% 
+                            let price = item.price.toFixed(2) 
+                            let priceFirst = price.split('.')[0]
+                            let priceLast = price.split('.')[1]
+                        %>
+                        <b>R$</b> 
+                        <strong>
+                            <%= priceFirst %><span>,<%= priceLast %> </span>
+                        </strong>
+                    </span>
+                    <% if (item.installments > 1){%>
+                        <span class="parcel-price">
+                            ou <%= item.installments %>x 
+                            <b>R$</b> <%= (item.price/item.installments).toFixed(2).toString().replace('.',',') %>                            
+                        </span>
+                    <% }else {%>  
+                        <b></b> 
+                    <% }%>                     
+                </div>
+
+                <button type="button" class="btn btn-primary btn-comprar" 
+                data-idProduct="<%= item.id %>" data-prod="<%= JSON.stringify(item) %>">Adicionar ao carrinho</button>
+            </div>
+        </li>
+    <% }); %>
+</ul>

@@ -1,0 +1,233 @@
+*:focus {
+    outline: none;
+}
+body {
+    color: #313135;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 1.5;    
+}
+li {
+    list-style: none;
+}
+header .navbar {
+    border-radius: 0;
+    margin: 0;
+    margin-bottom: 30px;
+}
+.clear {
+    clear: both;
+    width: 100%;
+    height: 1px;
+}
+.row li {
+    margin-bottom: 56px;
+}
+.row .block2-name {
+    margin: 15px 0;
+    position: relative;
+}
+.row .block2-name::before {
+    background: #dfbd00;
+    content: '';
+    width: 16px;
+    height: 2px;
+    position: absolute;
+    bottom: -11px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+.price-info .parcel-price {
+    color: #999999;
+    font-size: 14px;
+}
+.price-info .parcel-price b {    
+    font-size: 14px;
+}
+.price-info .price strong span {
+    display: inline-block;
+    font-size: 12px;
+}
+.price-info span {
+    display: block;
+}
+.price-info span b {
+    font-size: 12px;
+    font-weight: normal;
+}
+.price-info span strong {
+    font-size: 24px;
+}
+
+.btn-comprar {
+    margin: 15px 0;
+}
+
+/* Sacola de compras */
+#minicart {
+    float: right;   
+    position: relative;
+    top: 6px; 
+}
+.total-wrap {
+    background: url('../images/icone-sacola.png') no-repeat 0 0 transparent;
+    width: 35px;
+    height: 35px;
+    display: block;
+    background-size: 80%;
+}
+span.total-items {
+    background: #dfbd00;
+    width: 17px;
+    height: 17px;
+    text-align: center;
+    display: block;
+    position: relative;
+    top: 20px;
+    right: 5px;
+    font-size: 11px;
+    padding: 1px;
+
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+}
+
+div#cart {
+    display: none;
+    position: absolute;
+    z-index: 10;
+    right: -1px;
+    top: 48px;
+    background: #222;
+    border-top: 1px solid;
+    padding: 5px 0;
+    padding-left: 15px;
+    max-height: 545px;
+}
+div#cart.box-scrool {
+    padding-left: 0;
+}
+div#cart.box-scrool div#resumeCart {
+    right: -17px;
+}
+div#cart .total-wrap,
+div#cart h2 {
+    display: -webkit-inline-box;
+}
+div#cart .title-cart {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+div#cart .total-wrap {
+    background-size: 100%;
+    height: 40px;
+    position: relative;
+    top: -5px;
+}
+div#cart .total-wrap span.total-items {
+    right: -20px;
+    top: 30px;
+}
+div#cart h2 {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    position: relative;
+    top: 15px;
+    text-indent: 9px;
+    text-transform: uppercase;
+}
+div#resumeCart {
+    overflow-y: auto;
+    max-height: 295px;
+    padding-right: 15px;
+    position: relative;
+}
+
+div#resumeCart .sacola-vazio {
+    padding: 10px 60px 38px 40px;
+    color: #fff;
+}
+.product-list {
+    color: #fff;
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    padding: 15px 20px;
+    border-top: 2px solid #131316;
+}
+.product-list .img-product {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+}
+.product-list .img-product img {
+    width: 50px;
+    height: 50px;
+}
+.info-product {
+    float: left;
+}
+.info-product p {
+    display: block;
+    font-weight: 600;
+    margin: 0;
+}
+.info-product p.detalhes {
+    color: #999999;
+    font-size: 12px;
+    font-weight: 400;
+}
+.price-product {
+    float: right;
+}
+.price-cart {
+    color: #dfbd00;
+    font-weight: 600;
+    font-size: 14px;
+}
+.price-product button.close {
+    text-shadow: none;
+    font-size: 26px;
+    font-weight: 600;
+    position: relative;
+    top: -12px;
+    opacity: 1;
+}
+
+.price-cart-results {
+    padding: 32px 17px 0 17px;
+    overflow: hidden;
+}
+.price-cart-results p {
+    color: #999999;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 600;
+    float: left;
+}
+.price-cart-results .subtotal {
+    float: right;
+}
+.price-cart-results .subtotal strong {
+    display: block;
+    text-align: right;
+    color: #dfbd00;
+    font-weight: 600;
+    font-size: 24px;
+}
+.price-cart-results .btn-comprar {
+    background: #000;
+    color: #fff;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    width: 100%;
+    padding: 12px 0;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title><%= name %></title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/css/styles.css">
+</head>
+<body>
+  <header>
+     <nav class="navbar navbar-inverse">
+      <ul class="nav navbar-nav" style="display:none;">
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/carrinho">carrinho</a></li>
+      </ul>
+
+      <div class="container">
+        <div id="minicart">
+            <span class="total-wrap">
+                <span class="total-items" id="total-items">0</span>
+            </span>
+            <span class="icon-cartt"></span>            
+        </div>
+        <div id="cart">
+            <div class="title-cart">
+                <span class="total-wrap">
+                    <span class="total-items" id="total-items-sacola">0</span>
+                </span>
+                <h2>Sacola</h2>
+            </div>
+            <div id="resumeCart"></div>
+            <div class="price-cart-results">
+              <p>Subtotal</p>
+              <div class="subtotal">
+                <strong>R$ 000,00</strong>
+                <p>&nbsp;</p>
+              </div>
+              <div class="clear"></div>
+              <button type="button" class="btn btn-comprar">comprar</button>
+            </div>            
+        </div>        
+      </div>  
+     </nav>
+  </header>  
+
+   <main>
+     <div class="container">
+      <%- body %>
+     </div>
+   </main>
+   <script async="" src="js/cookie.js"></script>
+   <script async="" src="js/excluirProduct.js"></script>
+   <script async="" src="js/constituirSacola.js"></script>
+   <script async="" src="js/miniCart.js"></script>
+   <script async="" src="js/addProductCart.js"></script>   
+   <script async="" src="js/openCart.js"></script>  
+</body>
+</html>  
