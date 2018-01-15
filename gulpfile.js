@@ -4,7 +4,6 @@ let browserSync = require('browser-sync').create(); // Reload the browser on fil
 
 gulp.task('run',['server'],function() {
     gulp.watch('./views/*/*.*', browserSync.reload);
-    //gulp.watch('app/scripts/**/*.js', browserSync.reload);
 });
 
 // start our server and listen for changes
@@ -19,4 +18,8 @@ gulp.task('server',function() {
     }).on('start', () => {
         gulp.src('server.js')
     });
+});
+
+gulp.task('default', function() {
+    // Tarefas
 });
