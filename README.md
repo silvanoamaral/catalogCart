@@ -31,6 +31,6 @@
 
 ## Agora vamos rodar o projeto
 
-Execute o comando no cmd `gulp run`, o server vai executar e mostrar a com a URL para acessar o projeto
+Execute o comando no cmd `gulp run`, o server vai executar, mostrando a URL para acessar o projeto;
 * URL: http://localhost:3000
 * Para parar o server precione `ctrl + c` 
