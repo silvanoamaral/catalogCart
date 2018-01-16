@@ -2,6 +2,7 @@ function addProductCart(e){
     //type. O tipo de evento que se está lidando;
     //target. O elemento que disparou o evento.
     var id = e.target.getAttribute("data-idProduct"); 
+    
     var listProduct = readCookie('listProduct');
 
     if(listProduct === null){

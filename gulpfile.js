@@ -19,7 +19,3 @@ gulp.task('server',function() {
         gulp.src('server.js')
     });
 });
-
-gulp.task('default', function() {
-    // Tarefas
-});

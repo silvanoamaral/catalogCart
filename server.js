@@ -23,12 +23,6 @@ app.get('/', (req, res) => {
     });
 });
 
-//Router
-app.get('/carrinho', (req, res) => {
-    res.render('pages/carrinho');
-});
-
-
 app.use(express.static(__dirname + '/public'));
 //server
 app.listen(port, () => {

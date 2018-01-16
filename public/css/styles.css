@@ -15,10 +15,18 @@ header .navbar {
     margin: 0;
     margin-bottom: 30px;
 }
+nav.navbar.navbar-inverse {
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+}
 .clear {
     clear: both;
     width: 100%;
     height: 1px;
+}
+ul.row.text-center {
+    padding-top: 90px;
 }
 .row li {
     margin-bottom: 56px;
