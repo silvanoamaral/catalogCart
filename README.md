@@ -23,8 +23,8 @@
 ## Instalação do projeto
 
 * Clone o repositório na sua máquina: https://github.com/silvanoamaral/catalogCart;
-* Acesse a pasta do projeto `cd catalogCart`;
-* Digite o comando `npm install` para instalar as dependências usado no npm.
+* Entre na pasta `cd catalogCart`;
+* Digite o comando `npm install` para instalar as dependências.
 
 ## Agora vamos rodar o projeto
 
