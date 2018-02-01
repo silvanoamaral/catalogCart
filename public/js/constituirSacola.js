@@ -9,7 +9,7 @@ function constituirSacola(){
         if(product.indexOf(',') >= 0){
             obj = product.split(',');
         }else{
-            obj = product.split('');
+            obj = product.split(' ');
         }
 
         obj.forEach(function(e,i){ 
@@ -41,7 +41,7 @@ function constituirSacola(){
                 
                 el.innerHTML += html;
             }else{
-                console.info('Função constituirSacola forEach:. Não existe produtos adicionados.');
+                //console.info('Função constituirSacola forEach:. Não existe produtos adicionados.');
             }   
         });        
     }else{

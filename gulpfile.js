@@ -1,9 +1,8 @@
 let gulp = require('gulp');
 let nodemon = require('gulp-nodemon');
-let browserSync = require('browser-sync').create(); // Reload the browser on file changes
 
-gulp.task('run',['server'],function() {
-    gulp.watch('./views/*/*.*', browserSync.reload);
+gulp.task('run',['server'],function() { 
+    gulp.watch('./views/*/*.*');   
 });
 
 // start our server and listen for changes

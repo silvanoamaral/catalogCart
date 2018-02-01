@@ -14,13 +14,17 @@ function addProductCart(e){
         if(listProduct.indexOf(',') >= 0){
             obj = listProduct.split(',');
         }else{
-            obj = listProduct.split('');
+            obj = listProduct.split(' ');
         }
 
         obj.push(id);
         createCookie('listProduct', obj, 150); 
     }    
     
+    var box_sacola = document.getElementById('cart');
+    box_sacola.classList = "open";
+    box_sacola.style.display = "block";
+
     //Atualiza o value da sacola
     miniCart();
 }

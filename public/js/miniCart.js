@@ -6,7 +6,16 @@ function miniCart(){
 
         if(product.indexOf(',') >= 0){
             let obj = product.split(',');
-            let qtd = obj.length;
+            let qtd = 1;
+
+            for(var i=0; i < obj.length; i++){
+                if(obj[i] != ''){
+                    qtd = i; 
+                }
+            }
+
+            //let qtd = obj.length;
+
             el.innerHTML = qtd;
             elCart.innerHTML = qtd;
 

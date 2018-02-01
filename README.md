@@ -9,12 +9,12 @@
 
 * HTML
 * CSS
-* javascript
+* Javascript / ES5
 * Gulp
-* nodejs 
-* nodejs EJS	
+* NodeJS 
+* EJS	
 
-## Para rodar o projeto na sua maquina, é necessário ter instalado node.js, npm
+## Para rodar o projeto na sua maquina, é necessário ter instalado node.js e npm
 
 * Acesse o `cmd` (pront de comando);
 * Instalar o Node na maquina: Link https://nodejs.org/;
@@ -23,11 +23,11 @@
 ## Instalação do projeto
 
 * Clone o repositório na sua máquina: https://github.com/silvanoamaral/catalogCart;
-* Acesse a pasta do projeto `catalogCart`;
-* Digite o comando `npm install` para instalar os pacotes.
+* Acesse a pasta do projeto `cd catalogCart`;
+* Digite o comando `npm install` para instalar as dependências usado no npm.
 
 ## Agora vamos rodar o projeto
 
-Execute o comando no cmd `gulp run`, o server vai executar, mostrando a URL para acessar o projeto;
+Execute o comando no cmd `gulp run`, para iniciar a aplicação;
 * URL: http://localhost:3000
-* Para parar o server precione `ctrl + c` 
+* Para parar o server pressione `ctrl + c` 
